@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@500;600;900&display=swap');
+
+
+:root {
+    --black: #232628;
+    --light_grey: #ECEFF3;
+    --red: #FF4848;
+    --orange: #CC6119;
+    --yellow: #FAB637;
+    --white: #FFFFFF;
+    --blue: #6C98E1;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+
+}
+.bg-custom--black{
+    background-color: var(--black);
+}
+
+.bg-custom--lightgray{
+    background-color: var(--light_grey);
+}
+
+.bg-custom--blue{
+    background-color: var(--blue);
+}
+
+.bg-custom--red{
+    background-color: var(--red);
+}
+
+.bg-custom--orange{
+    background-color: var(--orange);
+}
+
+.bg-custom--yellow{
+    background-color: var(--yellow);
+}
+html {
+    font-size: 1rem;
+    font-family: Open-Sans, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+figure>img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+/*##################################### HEADER */
+
+Header {
+    position: static;
+    width: 100%;
+
+}
+
+Header h1 {
+    color: var(--white);
+    height: 100px;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 2.7em;
+    font-weight: bolder;
+}
+
+Header h1 span {
+    color: var(--orange);
+}
+
+#burgerMenu {
+    background-color: #232628;
+    width: 50px;
+    margin-right: 60px;
+    color: var(--orange);
+}
+
+#topHeaderMobile {
+    background-color: #232628;
+    /*display: flex;*/
+    flex-direction: row;
+    margin: 0;
+    padding: 20px 0;
+    height: 100px;
+    color: var(--orange);
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Montserrat, sans-serif;
+}
+
+#topHeaderMobile img {
+    padding: 10px;
+    height: 70px;
+}
+
+#topHeaderMobile p {
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+#topHeaderMobile span {
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: var(--white);
+}
+#topHeaderMobile2 {
+    background-color: #232628;
+    /*display: flex;*/
+    flex-direction: row;
+    margin: 0;
+    padding: 20px 0;
+    height: 100px;
+    color: var(--orange);
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Montserrat, sans-serif;
+}
+
+#topHeaderMobile2 img {
+    padding: 10px;
+    height: 70px;
+}
+
+#topHeaderMobile2 p {
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+#topHeaderMobile2 span {
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+#topHeaderDesktop {
+    grid-template-columns: 30% repeat(4, 1fr);
+    background-color: #232628;
+    margin: 0;
+
+    padding: 20px 0 0 0;
+
+    height: 100px;
+    color: var(--orange);
+    align-items: top;
+    font-family: Montserrat, sans-serif;
+}
+
+#topHeaderDesktop img {
+    height: 35px;
+}
+
+#topHeaderDesktop h1 {
+    color: white;
+    margin: 0;
+
+    padding: 0 30px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: right;
+}
+
+
+#topHeaderDesktop p {
+    color: white;
+    margin: 0;
+    font-size: 1em;
+}
+
+#adresseDesktop p {
+    font-size: 0.9em;
+}
+
+#adresseDesktop h3 {
+    color: var(--orange);
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+#telephoneDesktop p {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#telephoneDesktop h3 {
+    color: var(--orange);
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+#ouvertureDesktop span {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+#ouvertureDesktop h3 {
+    color: var(--orange);
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+.flexible {
+    display: flex;
+    flex-direction: row;
+}
+
+header .fa {
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 1em;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    background-color: gray;
+    margin: 0px 10px 0px 10px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+#burgerMenu button {
+    background-color: var(--black);
+    width: 80px;
+    border: none;
+}
+
+#bannerHeader {
+
+    height: 400px;
+    background: url(/images/vente-location.jpg)center center/cover scroll no-repeat;
+}
+#bottomHeader {
+    background-color: #232628;
+    position: static;
+    width: 100%;
+    height: auto;
+    color: var(--white);
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.responsive {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+footer {
+    background-color: var(--black);
+    padding: 30px 20px 0;
+    margin-bottom: 0;
+}
+
+footer h2 {
+    color: #6C98E1;
+    font-size: 1.1em;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+footer h2 span {
+    color: #FFFFFF;
+    
+}
+
+footer p {
+    color: rgb(141, 141, 141);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+footer p span {
+    color: rgb(255, 255, 255);
+}
+
+footer input {
+    padding: 0;
+    width: 80%;
+    height: 45px;
+    border: none;
+    vertical-align: top;
+    color: rgb(141, 141, 141);
+    font-size: 1.1em;
+}
+
+#submit {
+    background: url(/images/signal.png)center center/cover no-repeat;
+    border: none;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    
+}
+
+.styledlist{
+    list-style-image: url(/images/check.png);
+}
+.dyna-tabs .nav-link:focus,.dyna-tabs .nav-link.active {
+    background-color: var(--white) !important;
+    border: 3px solid var(--black) !important;
+    border-top: 5px solid var(--orange) !important;
+    color: black !important;
+    border-radius: 0;
+  }
+  
+
+.dyna-tabs .nav a{
+    color: #FFFFFF;
+  }
+.contactBg{
+    background: url(/images/vente-location.jpg)center center/cover no-repeat;
+}
+#topFooter {
+    border-bottom: solid gray 1px;
+    margin: 0 10px;
+}
+
+footer img {
+    height: 29px;
+}
+
+footer .fa {
+    color: #FFFFFF;
+    padding: 18px;
+    font-size: 1.8em;
+    width: 60px;
+    
+    text-align: center;
+    text-decoration: none;
+    background-color: gray;
+    margin: 20px 10px 20px 0;
+}
+
+#copy {
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* #############################################################################   media queries ####################################################################*/
+
+@media screen and (min-width:1400px) {
+    
+    
+    #topFooter {
+        display: flex;
+        margin: 0 150px;
+    }
+
+    .footerFlexContainer {
+        width: 30%;
+        padding: 10px;
+    }
+    
+    footer .fa {
+        color: #FFFFFF;
+        padding: 15px;
+        font-size: 1.4em;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(70, 70, 70);
+        margin: 20px 10px 20px 0;
+    }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zxx">  <!-- to avoid W3C WARNING LOREM IPSUM-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Club Auto est un site de vente et location de vehicules neufs et occasion.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Sets viewport scale at 1 on any devices -->
+
+    <title>CLUB AUTO-VEHICULE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- partie permetant le fonctionnement des "dynamic tabs"-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myTab a").click(function(e){
+                e.preventDefault();
+                $(this).tab("show");
+            });
+        });
+    </script>
+    <!-- fin de partie permetant le fonctionnement des "dynamic tabs"-->
+
+    <link rel="stylesheet" href="/CSS/stylesheetloc.css"> <!-- utilise la meme stylesheet que location-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container-fluid">
+    <header>
+        <section>
+            <div id="topHeaderMobile" class="d-flex d-lg-none">
+                <div>
+                    <h2 class="h1 pt-3 ps-4 text-white" style="font-weight: bolder;">CLUB AUTO</h2>
+                </div>                
+            </div>
+            <div id="topHeaderMobile2" class="d-flex d-lg-none ps-3">
+                <img src="/images/icon-telephone.png" alt="icone telephone">
+                <p>T&Eacute;L&Eacute;PHONE: <br>
+                    <span>01 23 45 67 89</span>
+                </p>
+            </div>
+            <div id="topHeaderDesktop" class="d-none d-lg-flex justify-content-lg-center " style="padding-right: 4%;">
+                <div>
+                    <h2 class="h1 text-white">CLUB AUTO</h2>
+                </div>
+                <div id="adresseDesktop" class="d-none d-xxl-flex flexible" style="padding-right: 4%;">
+                    <img src="/images/icone-adresse.png" alt="icone adresse">
+                    <div>
+                        <h3>ADRESSE:</h3>
+                        <p>AVENUE CHARLES DE GAULE<br>
+                            75000 PARIS</p>
+                    </div>
+                </div>
+                <div id="telephoneDesktop" class="flexible px-xl-2">
+                    <img src="/images/icon-telephone.png" alt="icone telephone">
+                    <div>
+                        <h3>T&Eacute;L&Eacute;PHONE:</h3>
+                        <p>01 23 45 67 89</p>
+                    </div>
+                </div>
+                <div id="ouvertureDesktop" class="d-none d-xl-block" style="padding-left: 4%;">
+                    <h3>OUVERTURE: <span>Du Lundi au Samedi</span><br>
+                        HORAIRES: <span>De 9h à 17h</span></h3>
+                </div>
+                <div id="headerSocial" style="padding-left: 4%;">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container">        
+        <main id="recents">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">ACCEUIL</a></li>
+                <li class="breadcrumb-item"><a href="/vente.html">VENTE</a></li>                
+                <li class="breadcrumb-item active">BMW 305</li>
+            </ul>
+            <h1>BMW 545i, LEATHER, navi, ABS </h1>
+            <figure>
+                <img src="/images/vehicule2.jpg" alt="BMW">
+            </figure>
+
+            <!-- DEBUT DE SECTION:ANCIENNE VERSION DES TABS FONCTIONNE PAS TOP
+            Tab header 
+            <div class="nav nav-pills d-flex flex-column flex-lg-row my-5 bg-dark fs-2" style="border-left: 5px solid rgb(0, 0, 0) !important;border-right: 5px solid rgb(0, 0, 0) !important;">
+                <button class="p-4 nav-link bg-dark text-white border-0 active" onclick="ficheTechnique(event, 'description')">DESCRIPTION</button>
+                <button class="p-4 nav-link bg-dark text-white border-0" onclick="ficheTechnique(event, 'technique')">TECHNIQUE</button>
+                <button class="p-4 nav-link bg-dark text-white border-0" onclick="ficheTechnique(event, 'options')">OPTIONS</button>
+                <button class="p-4 nav-link bg-dark text-white border-0" onclick="ficheTechnique(event, 'contact')">CONTACT</button>
+            </div>
+             Tab content 
+            <div id="description" class="tabcontent ">
+               <p class="fs-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est autem possimus recusandae praesentium ipsam consectetur.</p>
+               <p>Cumque libero, sint et explicabo aperiam dolor ea inventore ducimus magni incidunt cupiditate eligendi rem.</p>
+               <p>Sit optio ducimus similique, minima atque cumque, velit nostrum aspernatur, accusamus in dolorem autem sed.</p>
+               <p>Totam et quae amet alias, consequatur nesciunt, eius reiciendis doloribus mollitia rerum veritatis dolore ipsa?</p>
+            </div>
+            <div id="technique" class="tabcontent">
+            </div>
+            <div id="options" class="tabcontent">
+                <h2>OPTIONS</h2>
+                <ul class="styledlist">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+            </div>
+            <div id="contact" class="tabcontent">
+                <p> JOHN DOE </p>
+                <p>355 3555 3555</p>                                
+            </div>
+            <script>
+                function ficheTechnique(evt, fiche) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(fiche).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                </script>
+            FIN DE SECTION:ANCIENNE VERSION DES TABS FONCTIONNE PAS TOP-->
+
+            <!-- ################################################ DEBUT DYNAMIC TAB SECTION ###################################################-->
+            <div class="m-4 dyna-tabs" >
+                <ul class="nav nav-pills d-flex flex-column flex-lg-row bg-dark" id="myTab">
+                    <li class="nav-item">
+                        <a href="#description" class="nav-link active">DESCRIPTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#technique" class="nav-link">TECHNIQUE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#options" class="nav-link">OPTIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="description">
+                        <p class="fs-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est autem possimus recusandae praesentium ipsam consectetur.</p>
+                        <p>Cumque libero, sint et explicabo aperiam dolor ea inventore ducimus magni incidunt cupiditate eligendi rem.</p>
+                        <p>Sit optio ducimus similique, minima atque cumque, velit nostrum aspernatur, accusamus in dolorem autem sed.</p>
+                        <p>Totam et quae amet alias, consequatur nesciunt, eius reiciendis doloribus mollitia rerum veritatis dolore ipsa?</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="technique">
+                        <!--!important force l'overide css sur bootstrap-->
+                       <p class="my-4 ps-4 border-start border-4 text-muted" style="border-color: #CC6119 !important; font-style: italic;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam hic aperiam porro corporis deleniti accusamus. Deserunt qui dicta reprehenderit illo enim eaque, veritatis non quisquam earum perspiciatis magnam officia.</p>
+                       <p>Provident magnam dolor fugiat modi perspiciatis laborum tempore odio architecto reprehenderit omnis iusto, dolores dicta error beatae ab soluta recusandae minus inventore rerum harum ullam quia doloribus. Doloribus, est nemo!</p>
+                       <div >
+                           <p> Delectus, voluptatem at laborum iste expedita officia, </p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing a quo!</p>                                
+                       </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="options">
+                        <h2>OPTIONS</h2>
+                        <ul class="styledlist">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="contact">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ################################################ FIN DYNAMIC TAB SECTION   ###################################################-->
+        </main>        
+    </div>
+    <footer>
+        <div id="topFooter">
+            <section class="footerFlexContainer my-4">
+                <h2 class="blue">CLUB<span> AUTO</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat sapiente velit enim nihil
+                    ab?</p>
+            </section>
+            <section class="footerFlexContainer my-4">
+                <h3>HORAIRE D'OUVERTURE</h3>
+                <p>lundi-Samedi:<span>09:00-17:00</span></p>
+                <p>Dimanche et jours fériés:<span>Fermé</span></p>
+            </section>
+            <section class="footerFlexContainer my-4">
+                <h3>NEWSLETTER</h3>
+                <form action="email.html">
+                    <div class="btn-group">
+                        <input type="email" name="email" id="email" value="Entrez votre email">
+                        <button class="ps-1" id="submit" type="submit"></button>
+                    </div>
+
+                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                </form>
+            </section>
+            <section class="footerFlexContainer my-4">
+                <h3>RESEAUX SOCIAUX</h3>
+                <div id="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </section>
+        </div>
+        <div>
+            <p id="copy">Copyright &copy; Club Auto - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

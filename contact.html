@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Club Auto est un site de vente et location de vehicules neufs et occasion.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Sets viewport scale at 1 on any devices -->
+
+    <title>CLUB AUTO-VEHICULE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/stylesheetloc.css"> <!-- utilise la meme stylesheet que location-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container-fluid">
+    <header>
+        <section>
+            <div id="topHeaderMobile" class="d-flex d-lg-none">
+                <div>
+                    <h2 class="h1 pt-3 ps-4" style="font-weight: bolder;">CLUB AUTO</h2>
+                </div>
+                <div style="margin-left: auto;">
+
+                    <div id="burgerMenu" class="d-block d-lg-none"> <!--disparait au dessus de lg-->
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                            <img src="/images/hamburger_blue.png" alt="menu">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="topHeaderMobile2" class="d-flex d-lg-none ps-3">
+                <img src="/images/icon-telephone.png" alt="icone telephone">
+                <p>T&Eacute;L&Eacute;PHONE: <br>
+                    <span>01 23 45 67 89</span>
+                </p>
+            </div>
+            <div id="topHeaderDesktop" class="d-none d-lg-flex justify-content-lg-center " style="padding-right: 4%;">
+                <div>
+                    <h2 class="h1">CLUB AUTO</h2>
+                </div>
+
+                <div id="adresseDesktop" class="d-none d-xxl-flex flexible" style="padding-right: 4%;">
+                    <img src="/images/icone-adresse.png" alt="icone adresse">
+                    <div>
+                        <h3>ADRESSE:</h3>
+                        <p>AVENUE CHARLES DE GAULE<br>
+                            75000 PARIS</p>
+                    </div>
+                </div>
+                <div id="telephoneDesktop" class="flexible px-xl-2">
+                    <img src="/images/icon-telephone.png" alt="icone telephone">
+                    <div>
+                        <h3>T&Eacute;L&Eacute;PHONE:</h3>
+                        <p>01 23 45 67 89</p>
+                    </div>
+                </div>
+                <div id="ouvertureDesktop" class="d-none d-xl-block" style="padding-left: 4%;">
+                    <h3>OUVERTURE: <span>Du Lundi au Samedi</span><br>
+                        HORAIRES: <span>De 9h à 17h</span></h3>
+                </div>
+                <div id="headerSocial" style="padding-left: 4%;">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg py-0" style="background-color: rgba(211, 211, 211, 0.788);">
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark fw-bolder" href="/index.html">ACCEUIL</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-bolder" href="/vente.html">VENTE</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark  fw-bolder" href="/location.html">LOCATION</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white fw-bolder" href="/contact.html"
+                                style="background-color: #CC6119;">CONTACT</a>
+                        </li>
+                        <li>
+                            <div style="width: 150px;" class="d-none d-md-block"></div>
+                        </li>
+                        <!-- cree le gros decalage a droite sur ecrans larges-->
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <div class="container">     <!-- MAIN SECTION START HERE-->
+        <main class="contactBg px-1 py-5">
+            <div class="bg-white m-4">
+                <h1 class="fw-bolder p-2">CONTACTEZ NOUS</h1>
+                <form action="datasFormulaire.html" id="formContact" class="container-fluid row">
+                    <div class="m-2 m-lg-0 col-lg-4">
+                        <div class="mb-3">
+                            <label for="fName" class="form-label">Prénom*<br></label>
+                            <input type="text" name="fName" id="fName" required autofocus class="form-control bg-light"
+                                placeholder="Entrez votre prénom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formEmail" class="form-label">Email*<br></label>
+                            <input type="email" name="formEmail" id="formEmail" required class="form-control bg-light"
+                                placeholder="Entrez un email valide">
+                        </div>
+                    </div>
+                    <div class="m-2 m-lg-0 col-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lName" class="form-label">Nom*<br></label>
+                            <input type="text" name="lName" id="lName" required class="form-control bg-light"
+                                placeholder="Entrez votre nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telephone<br></label>
+                            <input type="tel" name="phone" id="phone" class="form-control bg-light"
+                                placeholder="Entrez votre numero de telephone">
+                        </div>
+                    </div>
+                    <div class="m-2 m-lg-0 col-12 col-lg-4">
+                        <div>
+                            <label for="msg" class="form-label">Message<br></label>
+                            <textarea name="msg" id="msg" cols="30" rows="10" class="form-control bg-light"
+                                placeholder="Entrez votre message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-lg bg-custom--blue m-3 text-white fw-bolder">ENVOYEZ</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div id="topFooter">
+            <section class="footerFlexContainer my-4">
+                <h2 class="blue">CLUB<span> AUTO</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat sapiente velit enim nihil
+                    ab?</p>
+            </section>
+            <section class="footerFlexContainer my-4">
+                <h3>HORAIRE D'OUVERTURE</h3>
+                <p>lundi-Samedi:<span>09:00-17:00</span></p>
+                <p>Dimanche et jours fériés:<span>Fermé</span></p>
+            </section>
+            <section class="footerFlexContainer my-4">
+                <h3>NEWSLETTER</h3>
+                <form action="email.html">
+                    <div class="btn-group">
+                        <input type="email" name="email" id="email" value="Entrez votre email">
+                        <button class="ps-1" id="submit" type="submit"></button>
+                    </div>
+
+                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                </form>
+            </section>
+            <section class="footerFlexContainer my-4">
+                <h3>RESEAUX SOCIAUX</h3>
+                <div id="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </section>
+        </div>
+        <div>
+            <p id="copy">Copyright &copy; Club Auto - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>
